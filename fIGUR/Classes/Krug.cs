@@ -9,7 +9,7 @@ using System.Windows.Shapes;
 
 namespace fIGUR.Classes
 {
-    public class Krug : Treugol
+    public class Krug : Figura
     {
         public double Radius { get; set; }
 

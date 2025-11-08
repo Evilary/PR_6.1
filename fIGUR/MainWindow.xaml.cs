@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using fIGUR.Classes;
 
 namespace fIGUR
 {
@@ -23,6 +24,18 @@ namespace fIGUR
         public MainWindow()
         {
             InitializeComponent();
+            DrawFigures();
+            
+        }
+
+        void DrawFigures()
+        {
+            Treugol treugol1 = new Treugol(50, 150, 250);
+            treugol1.Draw(Can);
+
+            Krug krug1 = new Krug(150, 150, 150);
+            krug1.Draw(Can);
+
         }
     }
 }
